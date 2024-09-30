@@ -2,7 +2,16 @@
 // повертає їхню суму. Використовуйте цикл для обчислення суми.
 
 function sumArray(numbers) {
-  // Ваш код тут
+  var len = numbers.length;
+  var sum = 0;
+
+  var i = 0;
+  while (i < len) {
+    sum += numbers[i];
+    i = i + 1;
+  }
+
+  return sum;
 }
 
 console.log(sumArray([1, 2, 3, 4, 5])); // Виведе: 15

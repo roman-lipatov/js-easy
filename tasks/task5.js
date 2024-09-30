@@ -3,7 +3,16 @@
 
 
 function countOccurrences(str, char) {
-  //Ваш код
+  var len = str.length;
+  var occurences = 0;
+
+  for (i = 0; i < len; i++) {
+    if (str[i] == char) {
+      occurences = occurences + 1;
+    }
+  }
+
+  return occurences;
 }
 
 // Приклади використання:
